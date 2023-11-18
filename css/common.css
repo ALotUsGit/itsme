@@ -1,0 +1,122 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'SUIT';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT.woff2') format('woff2');
+}
+
+html, body, header, nav, main, section, div, aside, footer, h1, h2, h3, h4, h5, h6, p, span, small, figure, figcaption, img, ul, ol, li, a, button, input, label, form, table, caption, thead, tbody, tr, th, td { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    color: var(--gray01);
+    font-family: 'SUIT', sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: -0.4px;
+    word-spacing: -0.25px;
+}
+
+ul, ol { list-style: none; }
+a {
+    color: var(--gray01);
+    text-decoration: none;
+}
+img { width: 100%; height: auto; }
+
+:root {
+    --mainColor: #8f9de7;
+    --subColor01: #bfd1f7;
+    --subColor02: #E4EBFA;
+    --gray01: #393939;
+    --gray02: #686868;
+    --gray03: #a9a9a9;
+    --gray04: #e8e8e8;
+}
+
+/* font */
+.poppins {
+    font-family: 'Poppins';
+    letter-spacing: -0.378px;
+}
+.caption01 { font-size: 12px; }
+.body01 { font-size: 16px; letter-spacing: -0.05px; }
+.body02 { font-size: 18px; }
+.heading01 { font-size: 28px; letter-spacing: -0.756px; }
+h2 { font-size: 24px; }
+h3 { font-size: 21px; }
+
+/* 클래스명 제어 */
+.hidden { display: none; }
+.container {
+    margin: 0 auto;
+    padding: 80px 75px;
+}
+.contents { margin-top: 40px; }
+.link {
+    padding-right: 15px;
+    color: var(--gray03);
+    background: url(../images/ico_link.svg) no-repeat center right/9px;
+}
+
+/* header */
+header {
+    width: 100vw;
+    padding: 12px 36px;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+}
+header p a { color: var(--gray03); transition: 1s; }
+header p:hover a { color: var(--mainColor); }
+header .home a { font-weight: 600; }
+header .email a { font-weight: 300; letter-spacing: -0.25px; }
+
+/* footer */
+footer { padding: 36px 0; }
+footer .copyright {
+    color: var(--gray03);
+    text-align: center;
+}
+
+/* 공통 */
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px 8px;
+}
+/* ul li {
+    display: flex;
+    align-items: center;
+    gap: 12px 8px;
+} */
+ul:not(.no_dot) li::before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    margin-right: 6px;
+    background-color: var(--gray02);
+    border-radius: 50%;
+    transform: translateY(-3px);
+}
+
+/* 반응형 ---------------------------------------------------- */
+@media (max-width: 1024px) {
+    body { line-height: 1.35; }
+    .container{ padding: 40px 32px; }
+} /* // 1024px */
+
+@media (max-width: 768px) {
+    .body01 { font-size: 14px; }
+    .body02 { font-size: 16px; }
+    .heading01 { font-size: 24px; }
+    h2 { font-size: 21px; }
+    h3 { font-size: 18px; }
+
+    header .container { flex-direction: column; }
+} /* // 768px */
