@@ -13,10 +13,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
 
     <!-- css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/index.css" />
     
     <!-- js -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 
     <title>Jeon A Ryeon</title>
@@ -116,7 +118,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" class="preparing">
+                        <a href="" class="work01 work_modal_open">
                             <div class="top caption01">
                                 <p class="date">23.02 ~ 진행중</p>
                                 <span class="link">자세히보기</span>
@@ -129,7 +131,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" class="preparing">
+                        <a href="" class="work_modal_open work02">
                             <div class="top caption01">
                                 <p class="date">23.06 ~ 23.06</p>
                                 <span class="link">자세히보기</span>
@@ -143,7 +145,7 @@
                     <!-- <li>
                         <a href="">
                             <div class="top caption01">
-                                <p class="date">23.11 ~ 진행중</p>
+                                <p class="date">24.01 진행 예정</p>
                                 <span class="link">사이트 바로가기</span>
                             </div>
                             <h3 class="poppins body02">인성검사시스템</h3>
@@ -260,10 +262,62 @@
                 </ul>
             </div>
         </section>
+
+        <!-- 포트폴리오 디테일 뷰(모달) -->
+        <div class="work01 modal hidden">
+            <div class="contents">
+                <div class="tit">
+                    <h3 class="body02">채용평가관리 시스템</h3>
+                    <button class="close">close</button>
+                </div>
+
+                <div class="swiper-container work_slide">
+                    <div class="swiper-wrapper">
+                        <span class="swiper-slide img_cont"><img src="images/work01_1.jpg" alt="애널리틱스"></span>
+                        <span class="swiper-slide img_cont"><img src="images/work01_2.jpg" alt="관리자 사이트 설정"></span>
+                        <span class="swiper-slide img_cont"><img src="images/work01_3.jpg" alt="지원자 메인 페이지"></span>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="duration">
+                    <p>2023.02 ~ 진행중</p>
+                    <p class="refer">※ 기능개선 등 수정 진행 중</p>
+                </div>
+
+                <div class="txt_cont">
+                    <div class="txt">
+                        <p class="body01">역할 및 업무내용</p>
+                        <ul>
+                            <li>디자인 20%, 퍼블리싱 100% (팀구성 : 디자이너 1, 퍼블리셔 1, 프론트/백엔드 1)</li>
+                            <li>관리자 페이지 퍼블리싱</li>
+                            <li>지원자 페이지 PC 및 모바일 반응형 퍼블리싱</li>
+                        </ul>
+                    </div>
+
+                    <div class="txt">
+                        <p class="body01">사용 기술</p>
+                        <ul>
+                            <li>Git, HTML, CSS, Jquery, Chart.js, Figma, Photoshop, Illustrator</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 포트폴리오 디테일 뷰(모달) -->
     </main>
 
     <footer>
         <p class="copyright">&copy; JEON A RYEON</p>
     </footer>
+
+    <script>
+        var swiper = new Swiper(".work_slide", {
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+    </script>
 </body>
 </html>
