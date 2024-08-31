@@ -20,9 +20,6 @@
 <img src="https://img.shields.io/badge/Vuetify-1867C0?style=flat-square&logo=vuetify&logoColor=white"/>
 <img src="https://img.shields.io/badge/Github-181717?style=flat-square&logo=github&logoColor=white"/>
 
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ALotUsGit)](https://github.com/anuraghazra/github-readme-stats)
-
 🖥️ SKILLS _ DESIGN  
 <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white"/>
 <img src="https://img.shields.io/badge/Photoshop-31A8FF?style=flat-square&logo=adobephotoshop&logoColor=white"/>
