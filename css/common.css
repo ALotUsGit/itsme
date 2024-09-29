@@ -42,7 +42,7 @@ button {
 
 /* font */
 .poppins {
-    font-family: 'Poppins';
+    font-family: 'Poppins', 'SUIT', sans-serif;
     letter-spacing: -0.378px;
 }
 .caption01 { font-size: 12px; }
