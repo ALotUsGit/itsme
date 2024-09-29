@@ -145,6 +145,59 @@ section .tit {
 .sec03 .contents>li .task { gap: 8px; }
 .sec03 .contents>li .task li { color: var(--gray02); }
 
+/* 포트폴리오 디테일 뷰(모달) ---------------------------------------------------- */
+[class^="work"].modal {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 1000;
+}
+[class^="work"].modal .contents {
+    overflow-y: auto;
+    width: 80%;
+    max-width: 800px;
+    max-height: 80%;
+    margin-top: 0;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+[class^="work"].modal .contents>div:not(:first-of-type) { margin-top: 24px; }
+[class^="work"].modal .contents .tit,
+[class^="work"].modal .contents .duration {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+[class^="work"].modal .contents .duration .refer { color: var(--mainColor); }
+[class^="work"].modal .contents .work_slide {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--gray04);
+}
+[class^="work"].modal .contents .work_slide .img_cont {
+    overflow-y: auto;
+    max-height: 300px;
+    width: calc(100% + 0.2px) !important;
+}
+[class^="work"].modal .contents .work_slide .img_cont::-webkit-scrollbar { display: none; }
+[class^="work"].modal .contents .txt_cont {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+[class^="work"].modal .contents .txt_cont .txt p {
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
 /* 반응형 ---------------------------------------------------- */
 @media (max-width: 1440px) {
     .sec03 .contents { grid-template-columns: repeat(3, 1fr); }
@@ -169,4 +222,12 @@ section .tit {
     }
 
     .sec03 .contents { grid-template-columns: repeat(1, 1fr); gap: 12px; }
+    [class^="work"].modal .contents { padding: 16px; }
+    [class^="work"].modal .contents>div:not(:first-of-type) { margin-top: 12px; }
+    [class^="work"].modal .contents .work_slide .img_cont { max-height: 150px; }
+    [class^="work"].modal .contents .duration {
+        flex-direction: column;
+        align-items: baseline;
+        gap: 4px;
+    }
 } /* // 1024px */
