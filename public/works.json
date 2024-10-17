@@ -1,0 +1,120 @@
+[
+  {
+    "id": "work1",
+    "title": "포스코 기업시민 외 2곳",
+    "explain": "",
+    "responsive": "반응형",
+    "members": "",
+    "startDate": "2020.02",
+    "endDate": "2022.06",
+    "img": "/images/posco01.png",
+    "skills": "HTML, CSS, jQuery, photoshop",
+    "tasks": ["컨텐츠 관리, 오류 대응 등 유지보수", "웹접근성 갱신", "신규 페이지 디자인 및 퍼블리싱", "포스코, 포스코 제품 유지보수 업무 보조"]
+  },
+  {
+    "id": "work2",
+    "title": "포스코홀딩스",
+    "explain": "",
+    "responsive": "반응형",
+    "members": "",
+    "startDate": "2022.01",
+    "endDate": "2022.06",
+    "img": "/images/posco02.png",
+    "skills": "HTML, CSS, jQuery, photoshop",
+    "tasks": ["사이트 신규 구축", "유지보수"]
+  },
+  {
+    "id": "work3",
+    "title": "HDC현대산업개발 외 3곳",
+    "explain": "",
+    "responsive": "반응형",
+    "members": "",
+    "startDate": "2022.06",
+    "endDate": "2022.10",
+    "img": "/images/hdc01.png",
+    "skills": "",
+    "tasks": [
+      "홈페이지 운영 PM",
+      "HDC현대산업개발 홈페이지 리뉴얼 기획",
+      "아이파크 브랜드, 분양 사이트 총괄",
+      "포니정재단 신규 페이지 제작 및 리뉴얼 관리"
+    ]
+  },
+  {
+    "id": "work4",
+    "title": "채용평가관리 시스템",
+    "explain": "서류 접수부터 채용까지 다수의 지원자를 한번에 관리할 수 있도록 도와주는 시스템입니다. <br />23년도 신규 런칭 후에도 지속적인 업데이트로 이력서 커스텀, 면접 일정 관리, 블라인드 채용 등의 주요 기능들을 갖추었습니다.",
+    "responsive": "관리자 : PC 적응형 / 지원자 : 반응형",
+    "members": "5명 (기획 1명, 디자인 1명, 퍼블리싱 1명, 개발 2명)",
+    "startDate": "2023.02",
+    "endDate": "2023.08",
+    "img": "/images/selectIn01.png",
+    "img2": "/images/selectIn02.png",
+    "skills": "HTML, CSS, jQuery, gitlab",
+    "tasks": [
+      "유효성 검사 추가",
+      "Chart.js 활용한 통계 페이지 구현",
+      "디자인 & 퍼블리싱 리팩토링"
+    ]
+  },
+  {
+    "id": "work5",
+    "title": "한국직무능력평가연구소",
+    "explain": "올드한 디자인, 사업 확장으로 인한 내용 불일치 등의 문제 해결을 위해 리뉴얼한 회사 사이트입니다. <br />기존과 달리 반응형으로 제작하여 모바일에서도 회사 소개와 상품을 확인할 수 있도록 하였습니다.",
+    "responsive": "반응형",
+    "members": "3명 (디자인/기획 1명, 퍼블리싱 1명, 개발 1명)",
+    "startDate": "2023.07",
+    "endDate": "2023.07",
+    "img": "/images/kvai01.png",
+    "img2": "/images/kvai02.png",
+    "skills": "HTML, CSS, jQuery, swiper, gitlab",
+    "tasks": ["CSS 활용한 animation 효과 구현", "시맨틱 마크업"]
+  },
+  {
+    "id": "work6",
+    "title": "다면평가시스템",
+    "explain": "성과 및 조직 관리를 위해 상사, 동료, 부하, 본인 등 다수의 평가자가 여러 방면으로 평가할 수 있도록 돕는 시스템입니다. <br />회사 내 새로운 기술 도입과 관리자 레벨 세분화, 사용자 편의성 향상 등을 위해 Vue를 활용해 리뉴얼을 진행했었습니다. <br /> Vue 활용 리뉴얼 진행 : 2024.02 ~ 2024.05",
+    "responsive": "PC 적응형",
+    "members": "4명 (기획 1명, 디자인/기획 1명, 퍼블리싱 1명, 개발 1명)",
+    "startDate": "2023.06",
+    "endDate": "2023.06",
+    "img": "/images/select36001.png",
+    "img2": "/images/select36002.png",
+    "skills": "Vue, vuetify, html, css, Javascript, gitlab",
+    "tasks": [
+      "템플릿 구조 설계",
+      "Vue 디렉티브를 활용한 동적 페이지 구현",
+      "Vuetify 커스터마이징"
+    ]
+  },
+  {
+    "id": "work7",
+    "title": "인적성검사 플랫폼 리뉴얼",
+    "explain": "각 기업에 맞는 인 · 적성 검사 문항을 커스텀하고, 온라인 응시부터 결과확인까지 가능한 플랫폼입니다. <br />기존 사이트의 디자인과 개발환경이 오래되어 사용자 친화적인 경험을 제공하기 위해 리뉴얼을 기획하게 되었습니다. <br />작업 중 회사 사정으로 프론트엔드 및 백엔드 개발을 최소화하게 되면서, 디자인 및 퍼블리싱 작업에 집중하여 프로젝트를 진행하게 되었습니다.",
+    "responsive": "PC 적응형",
+    "members": "3명 (디자인/기획 1명, 퍼블리싱 1명, 개발 1명)",
+    "startDate": "2024.03",
+    "endDate": "2024.05",
+    "img": "/images/selectTest01.png",
+    "img2": "/images/selectTest02.png",
+    "skills": "HTML, CSS, Javascript, gitlab",
+    "tasks": [
+      "CSS 구조 리팩토링",
+      "관리자 페이지 퍼블리싱",
+      "인성검사 결과지 사용자 경험 개선"
+    ]
+  },
+  {
+    "id": "work8",
+    "title": "오피스너 웹버전 구축 프로젝트",
+    "explain": "부트캠프에서 진행한 기업 연계 프로젝트입니다. <br />오피스너란, 입주자가 건물 편의시설 등의 정보를 확인하고 예약할 수 있는 서비스입니다. <br />앱버전으로만 제공되어 오던 오피스너를 PC로도 사용하고 싶다는 고객의 니즈를 받아들여 웹 버전으로 구축하게 되었습니다.",
+    "responsive": "반응형",
+    "members": "기업 연계 프로젝트 (프론트엔드)",
+    "startDate": "2024.09",
+    "endDate": "진행중",
+    "img": "/images/office01.png",
+    "img2": "/images/office02.png",
+    "skills": "Next.JS, TypeScript, tailwind css, zustand, github, linear",
+    "tasks": ["쿼리스트링을 활용한 동적 데이터 패칭 및 상태 관리 최적화"]
+  }
+]
