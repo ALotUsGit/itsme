@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 
-import mainImg from "../../public/images/main.png";
-import works from "../../public/works.json";
+import mainImg from "../../../public/images/main.png";
+import WorkList from "@/components/WorkList";
 
 const skills = [
   { category: "dev", name: "HTML" },
@@ -24,6 +24,8 @@ const skills = [
 ];
 
 export default function Home() {
+  const works = require("/public/works.json");
+
   return (
     <main>
       <section className="relative flex h-screen flex-col justify-end overflow-hidden bg-[#0F1721]/90 px-6 py-12 md:px-28 md:py-32">
@@ -79,7 +81,7 @@ export default function Home() {
               {skills.map((skill) => (
                 <span
                   className={twMerge(
-                    "bg-primary rounded px-4 py-2 text-sm/none text-white md:font-medium",
+                    "rounded bg-primary px-4 py-2 text-sm/none text-white md:font-medium",
                     skill.category === "design" && "bg-secondary",
                   )}
                 >
@@ -143,39 +145,21 @@ export default function Home() {
       </section>
 
       <section className="bg-gray-50 px-4 py-10 md:px-10 md:py-20">
-        <div className="mx-auto grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-8 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="mx-auto grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-8 xl:grid-cols-3 2xl:grid-cols-4">
           <h2 className="relative z-10 col-span-full text-xl font-semibold leading-none md:text-3xl">
             Work
-            <span className="bg-secondary absolute bottom-0 left-[3.15rem] -z-10 size-2 rounded-full md:bottom-1 md:left-[4.7rem] md:size-3" />
+            <span className="absolute bottom-0 left-[3.15rem] -z-10 size-2 rounded-full bg-secondary md:bottom-1 md:left-[4.7rem] md:size-3" />
           </h2>
-          {works.reverse().map((work) => (
-            <div
+          {works.map((work: any) => (
+            <WorkList
               key={work.id}
-              className="flex flex-col rounded-lg border border-gray-300 bg-white px-3 py-4 md:px-6 md:py-7"
-            >
-              <span className="text-xs/none text-gray-400">
-                {work.startDate} ~ {work.endDate}
-              </span>
-              <h3 className="mb-4 mt-2 font-semibold leading-none tracking-tight lg:text-lg">
-                {work.title}
-              </h3>
-              <div className="mb-4 h-28 overflow-hidden rounded-lg border border-gray-200 bg-gray-50 xl:h-52">
-                <Image
-                  src={work.img}
-                  alt={""}
-                  width="365"
-                  height="180"
-                  className="h-full w-full object-cover object-top"
-                />
-              </div>
-              <ul className="flex flex-col gap-0.5">
-                {work.tasks.map((task, idx) => (
-                  <li key={idx} className="relative pl-2 text-sm text-gray-600">
-                    <span className="absolute left-0">·</span> {task}
-                  </li>
-                ))}
-              </ul>
-            </div>
+              id={work.id}
+              title={work.title}
+              startDate={work.startDate}
+              endDate={work.endDate}
+              img={work.img}
+              tasks={work.tasks}
+            />
           ))}
         </div>
       </section>
