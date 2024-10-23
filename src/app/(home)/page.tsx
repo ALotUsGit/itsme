@@ -71,6 +71,7 @@ export default function Home() {
 
         <Link
           href="https://github.com/ALotUsGit"
+          target="_blank"
           className="absolute right-6 top-12 flex items-center gap-2 font-medium text-gray-400 transition-colors hover:text-gray-300 md:right-28 md:top-20"
         >
           Github <ArrowUpRightIcon className="size-4" />
