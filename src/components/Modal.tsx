@@ -13,17 +13,19 @@ const Modal = ({ children }: Props) => {
   };
 
   return (
-    <dialog className="fixed left-0 top-0 flex h-screen w-screen items-center justify-center bg-black/50">
-      <div className="relative max-h-[80vh] w-4/5 max-w-screen-lg rounded bg-white px-4 py-8">
+    <dialog className="fixed left-0 top-0 z-50 flex h-screen w-screen items-center justify-center bg-black/50">
+      <div className="relative w-4/5 max-w-screen-lg">
         <button
           type="button"
           onClick={back}
-          className="absolute -right-10 top-0"
+          className="absolute -right-8 top-0 md:-right-12"
         >
-          <XCircleIcon className="size-8 text-white" />
+          <XCircleIcon className="size-6 text-white md:size-10" />
         </button>
 
-        {children}
+        <div className="flex max-h-[80vh] flex-col gap-12 overflow-y-auto overflow-x-hidden rounded bg-white p-8">
+          {children}
+        </div>
       </div>
     </dialog>
   );

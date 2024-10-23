@@ -2,7 +2,25 @@ import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 
 import mainImg from "../../../public/images/main.png";
+import me from "../../../public/images/me.png";
 import WorkList from "@/components/WorkList";
+import works from "../../../public/works.json";
+import Link from "next/link";
+import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
+
+type Tasks = {
+  taskTitle: string;
+  taskEpxlain: string[];
+};
+
+type Work = {
+  id: string;
+  title: string;
+  startDate: string;
+  endDate: string;
+  imgs: string[];
+  tasks: Tasks[];
+};
 
 const skills = [
   { category: "dev", name: "HTML" },
@@ -24,8 +42,6 @@ const skills = [
 ];
 
 export default function Home() {
-  const works = require("/public/works.json");
-
   return (
     <main>
       <section className="relative flex h-screen flex-col justify-end overflow-hidden bg-[#0F1721]/90 px-6 py-12 md:px-28 md:py-32">
@@ -52,6 +68,13 @@ export default function Home() {
           alt="메인 이미지"
           className="absolute left-0 top-0 -z-10 h-full object-cover"
         />
+
+        <Link
+          href="https://github.com/ALotUsGit"
+          className="absolute right-6 top-12 flex items-center gap-2 font-medium text-gray-400 transition-colors hover:text-gray-300 md:right-28 md:top-20"
+        >
+          Github <ArrowUpRightIcon className="size-4" />
+        </Link>
       </section>
 
       <section className="mx-auto flex max-w-screen-xl flex-wrap gap-x-28 gap-y-4 px-6 py-10 md:px-4 md:py-20">
@@ -63,7 +86,9 @@ export default function Home() {
         </h2>
 
         <div>
-          <div className="mb-8 h-56 rounded-lg bg-gray-100" />
+          <div className="mb-8 max-w-64 overflow-hidden rounded-lg">
+            <Image className="object-contain" src={me} alt="aryeon" />
+          </div>
           <h3 className="mb-4 text-lg font-semibold">Contact</h3>
           <ul className="flex flex-col gap-2">
             <li>+82 10-2266-5953</li>
@@ -80,8 +105,9 @@ export default function Home() {
             <div className="flex flex-wrap gap-x-1 gap-y-2">
               {skills.map((skill) => (
                 <span
+                  key={skill.name}
                   className={twMerge(
-                    "rounded bg-primary px-4 py-2 text-sm/none text-white md:font-medium",
+                    "rounded bg-primary px-4 py-2 text-sm/none text-white",
                     skill.category === "design" && "bg-secondary",
                   )}
                 >
@@ -150,14 +176,14 @@ export default function Home() {
             Work
             <span className="absolute bottom-0 left-[3.15rem] -z-10 size-2 rounded-full bg-secondary md:bottom-1 md:left-[4.7rem] md:size-3" />
           </h2>
-          {works.map((work: any) => (
+          {works.map((work: Work) => (
             <WorkList
               key={work.id}
               id={work.id}
               title={work.title}
               startDate={work.startDate}
               endDate={work.endDate}
-              img={work.img}
+              imgs={work.imgs}
               tasks={work.tasks}
             />
           ))}

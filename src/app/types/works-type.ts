@@ -11,8 +11,7 @@ export type TWorks = {
   members?: string;
   startDate: string;
   endDate: string;
-  img: string;
-  img2?: string;
+  imgs: string[];
   skills?: string;
   tasks: Tasks[];
 };

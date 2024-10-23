@@ -2,10 +2,11 @@ import { TWorks } from "@/app/types/works-type";
 import Image from "next/image";
 import Link from "next/link";
 
-const WorkList = ({ id, title, startDate, endDate, img, tasks }: TWorks) => {
+const WorkList = ({ id, title, startDate, endDate, imgs, tasks }: TWorks) => {
   return (
     <Link
       href={`/works/${id}`}
+      scroll={false}
       className="flex flex-col rounded-lg border border-gray-300 bg-white px-3 py-4 md:px-6 md:py-7"
     >
       <span className="text-xs/none text-gray-400">
@@ -17,7 +18,7 @@ const WorkList = ({ id, title, startDate, endDate, img, tasks }: TWorks) => {
       </h3>
       <div className="mb-4 h-28 overflow-hidden rounded-lg border border-gray-200 bg-gray-50 xl:h-52">
         <Image
-          src={img}
+          src={imgs[0]}
           alt={""}
           width="365"
           height="180"
@@ -26,7 +27,7 @@ const WorkList = ({ id, title, startDate, endDate, img, tasks }: TWorks) => {
       </div>
       <ul className="flex flex-col gap-0.5">
         {tasks.map((task, idx) => (
-          <li key={idx} className="relative pl-2 text-sm text-gray-600">
+          <li key={id + "task" + idx} className="relative pl-2 text-sm text-gray-600">
             <span className="absolute left-0">·</span> {task.taskTitle}
           </li>
         ))}

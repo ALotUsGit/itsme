@@ -2,89 +2,155 @@
   {
     "id": "officener",
     "title": "오피스너 웹버전 구축 프로젝트",
-    "explain": "부트캠프에서 진행한 기업 연계 프로젝트입니다. <br />오피스너란, 입주자가 건물 편의시설 등의 정보를 확인하고 예약할 수 있는 서비스입니다. <br />앱버전으로만 제공되어 오던 오피스너를 PC로도 사용하고 싶다는 고객의 니즈를 받아들여 웹 버전으로 구축하게 되었습니다.",
+    "explain": "부트캠프에서 진행한 기업 연계 프로젝트입니다. \n오피스너란, 입주자가 건물 편의시설 등의 정보를 확인하고 예약할 수 있는 서비스입니다. \n앱버전으로만 제공되어 오던 오피스너를 PC로도 사용하고 싶다는 고객의 니즈를 받아들여 웹 버전으로 구축하게 되었습니다.",
     "responsive": "반응형",
     "members": "기업 연계 프로젝트 (프론트엔드)",
     "startDate": "2024.09",
     "endDate": "진행중",
-    "img": "/images/office01.png",
-    "img2": "/images/office02.png",
+    "imgs": ["/images/office01.png", "/images/office02.png"],
     "skills": "Next.JS, TypeScript, tailwind css, zustand, github, linear",
     "tasks": [
       {
-        "taskTitle": "쿼리스트링을 활용한 동적 데이터 패칭 및 상태 관리 최적화",
-        "taskEpxlain": [""]
+        "taskTitle": "회의실 예약 내역 화면 개발",
+        "taskEpxlain": [
+          "이슈 : 서버 컴포넌트에서 클라이언트 컴포넌트인 month-picker의 연도와 월 값이 바뀔 때마다 해당 값을 서버로 전달해 리스트를 업데이트 하는 기능 필요",
+          "해결 : 검색기능과 마찬가지로 쿼리 스트링을 활용해 문제를 해결함으로서 복잡성과 비효율성을 감소"
+        ]
+      },
+      {
+        "taskTitle": "목업 서버 제거 및 목업 데이터 처리",
+        "taskEpxlain": [
+          "이슈 : 공지사항, 설문 페이지 등 기존에 목업 서버로 제작된 페이지를 목업 데이터로 수정",
+          "해결 : 유지보수성을 고려해 기업의 코드 컨벤션에 맞춰 데이터 패칭 방식 수정"
+        ]
       }
     ]
   },
   {
     "id": "selectTest",
     "title": "인적성검사 플랫폼 리뉴얼",
-    "explain": "각 기업에 맞는 인 · 적성 검사 문항을 커스텀하고, 온라인 응시부터 결과확인까지 가능한 플랫폼입니다. <br />기존 사이트의 디자인과 개발환경이 오래되어 사용자 친화적인 경험을 제공하기 위해 리뉴얼을 기획하게 되었습니다. <br />작업 중 회사 사정으로 프론트엔드 및 백엔드 개발을 최소화하게 되면서, 디자인 및 퍼블리싱 작업에 집중하여 프로젝트를 진행하게 되었습니다.",
+    "explain": "각 기업에 맞는 인·적성 검사 문항을 커스텀하고, 온라인 응시부터 결과확인까지 가능한 플랫폼입니다. \n기존 사이트의 디자인과 개발환경이 오래되어 사용자 친화적인 경험을 제공하기 위해 리뉴얼을 기획하게 되었습니다. \n작업 중 회사 사정으로 프론트엔드 및 백엔드 개발을 최소화하게 되면서, 디자인 및 퍼블리싱 작업에 집중하여 프로젝트를 진행하게 되었습니다.",
     "responsive": "PC 적응형",
-    "members": "3명 (디자인/기획 1명, 퍼블리싱 1명, 개발 1명)",
+    "members": "3명 (디자인·기획 1명, 퍼블리싱 1명, 개발 1명)",
     "startDate": "2024.03",
     "endDate": "2024.05",
-    "img": "/images/selectTest01.png",
-    "img2": "/images/selectTest02.png",
+    "imgs": ["/images/selectTest01.png", "/images/selectTest02.png"],
     "skills": "HTML, CSS, Javascript, gitlab",
     "tasks": [
-      { "taskTitle": "CSS 구조 리팩토링", "taskEpxlain": [""] },
-      { "taskTitle": "관리자 페이지 퍼블리싱", "taskEpxlain": [""] },
-      { "taskTitle": "인성검사 결과지 사용자 경험 개선", "taskEpxlain": [""] }
+      {
+        "taskTitle": "성능 개선 및 가독성 향상을 위한 CSS 구조 리팩토링",
+        "taskEpxlain": [
+          "중복되는 스타일 및 미사용 스타일을 제거하여 \n성능 개선\n 및 전체적인 \n코드의 가독성 향상\n",
+          "모든 요소에 float과 postion을 사용한 기존의 비효율적인 스타일링을 flex와 grid를 사용하여 개선"
+        ]
+      },
+      {
+        "taskTitle": "PC 및 인쇄를 고려한 검사 결과지 사용자 경험 개선",
+        "taskEpxlain": [
+          "인쇄용만 고려해 a4 사이즈로 작업된 페이지를 Media print로 PC 이용시에도 불편함이 없도록 \n사용자 경험 개선\n"
+        ]
+      },
+      {
+        "taskTitle": "관리자 페이지 퍼블리싱",
+        "taskEpxlain": [
+          "로그인, 기업리스트, 검사 결과 등 관리자 페이지 퍼블리싱",
+          "\n재사용성 및 유지보수성을 고려\n하여 CSS 모듈화를 기반으로 진행"
+        ]
+      }
     ]
   },
   {
     "id": "select360",
     "title": "다면평가시스템",
-    "explain": "성과 및 조직 관리를 위해 상사, 동료, 부하, 본인 등 다수의 평가자가 여러 방면으로 평가할 수 있도록 돕는 시스템입니다. <br />회사 내 새로운 기술 도입과 관리자 레벨 세분화, 사용자 편의성 향상 등을 위해 Vue를 활용해 리뉴얼을 진행했었습니다. <br /> Vue 활용 리뉴얼 진행 : 2024.02 ~ 2024.05",
+    "explain": "성과 및 조직 관리를 위해 상사, 동료, 부하, 본인 등 다수의 평가자가 여러 방면으로 평가할 수 있도록 돕는 시스템입니다. \n회사 내 새로운 기술 도입과 관리자 레벨 세분화, 사용자 편의성 향상 등을 위해 Vue를 활용해 리뉴얼을 진행했었습니다. \n Vue 활용 리뉴얼 진행 : 2024.02 ~ 2024.05",
     "responsive": "PC 적응형",
-    "members": "4명 (기획 1명, 디자인/기획 1명, 퍼블리싱 1명, 개발 1명)",
+    "members": "4명 (기획 1명, 디자인·기획 1명, 퍼블리싱 1명, 개발 1명)",
     "startDate": "2023.06",
     "endDate": "2023.06",
-    "img": "/images/select36001.png",
-    "img2": "/images/select36002.png",
+    "imgs": ["/images/select36001.png", "/images/select36002.png"],
     "skills": "Vue, vuetify, html, css, Javascript, gitlab",
     "tasks": [
-      { "taskTitle": "템플릿 구조 설계", "taskEpxlain": [""] },
+      {
+        "taskTitle": "템플릿 구조 설계",
+        "taskEpxlain": [
+          "전체 페이지 분석 후 유지보수성과 확장성을 고려해 공통 ui, 레이이웃을 컴포넌트화",
+          "유연성이 필요한 컴포넌트의 경우 slot을 활용해 처리"
+        ]
+      },
       {
         "taskTitle": "Vue 디렉티브를 활용한 동적 페이지 구현",
-        "taskEpxlain": [""]
+        "taskEpxlain": [
+          "시스템 특성상 평가 진행상황, 참여여부 등에 따라 다른 상태값을 보여줘야하기 때문에 v-if를 활용한 조건부 렌더링 진행",
+          "카드형 디자인, 리스트, 테이블 요소의 경우 v-for을 활용해 반복 렌더링"
+        ]
       },
-      { "taskTitle": "Vuetify 커스터마이징", "taskEpxlain": [""] }
+      {
+        "taskTitle": "디자인 시스템에 맞춘 Vuetify 커스터마이징",
+        "taskEpxlain": [
+          "디자인 통일성을 위해 사내 디자인 시스템에 맞춰 theme 시스템을 활용해 색상, 폰트, 크기 등을 수정",
+          "props를 활용해 버튼, 카드, 모달 등의 컴포넌트들을 디자인 시스템에 맞춰 수정"
+        ]
+      }
     ]
   },
   {
     "id": "kvai",
     "title": "한국직무능력평가연구소",
-    "explain": "올드한 디자인, 사업 확장으로 인한 내용 불일치 등의 문제 해결을 위해 리뉴얼한 회사 사이트입니다. <br />기존과 달리 반응형으로 제작하여 모바일에서도 회사 소개와 상품을 확인할 수 있도록 하였습니다.",
+    "explain": "올드한 디자인, 사업 확장으로 인한 내용 불일치 등의 문제 해결을 위해 리뉴얼한 회사 사이트입니다. \n기존과 달리 반응형으로 제작하여 모바일에서도 회사 소개와 상품을 확인할 수 있도록 하였습니다.",
     "responsive": "반응형",
-    "members": "3명 (디자인/기획 1명, 퍼블리싱 1명, 개발 1명)",
+    "members": "3명 (디자인·기획 1명, 퍼블리싱 1명, 개발 1명)",
     "startDate": "2023.07",
     "endDate": "2023.07",
-    "img": "/images/kvai01.png",
-    "img2": "/images/kvai02.png",
+    "imgs": ["/images/kvai01.png", "/images/kvai02.png"],
     "skills": "HTML, CSS, jQuery, swiper, gitlab",
     "tasks": [
-      { "taskTitle": "CSS 활용한 animation 효과 구현", "taskEpxlain": [""] },
-      { "taskTitle": "시맨틱 마크업", "taskEpxlain": [""] }
+      {
+        "taskTitle": "CSS 활용한 animation 효과 구현",
+        "taskEpxlain": [
+          "각 섹션별 집중도를 높이기 위해 스크롤 시 컨텐츠가 노출되도록  animation 효과 추가"
+        ]
+      },
+      {
+        "taskTitle": "SEO 최적화 및 유지보수를 위한 시맨틱 마크업",
+        "taskEpxlain": [
+          "시맨틱 태그 사용으로 명확한 의미 전달과 유지보수성 향상",
+          "웹 접근성을 향상 시키고 검색 엔진 최적화에 도움"
+        ]
+      }
     ]
   },
   {
     "id": "selectIN",
     "title": "채용평가관리 시스템",
-    "explain": "서류 접수부터 채용까지 다수의 지원자를 한번에 관리할 수 있도록 도와주는 시스템입니다. <br />23년도 신규 런칭 후에도 지속적인 업데이트로 이력서 커스텀, 면접 일정 관리, 블라인드 채용 등의 주요 기능들을 갖추었습니다.",
-    "responsive": "관리자 : PC 적응형 / 지원자 : 반응형",
+    "explain": "서류 접수부터 채용까지 다수의 지원자를 한번에 관리할 수 있도록 도와주는 시스템입니다. \n23년도 신규 런칭 후에도 지속적인 업데이트로 이력서 커스텀, 면접 일정 관리, 블라인드 채용 등의 주요 기능들을 갖추었습니다.",
+    "responsive": "관리자 : PC 적응형, 지원자 : 반응형",
     "members": "5명 (기획 1명, 디자인 1명, 퍼블리싱 1명, 개발 2명)",
     "startDate": "2023.02",
     "endDate": "2023.08",
-    "img": "/images/selectIn01.png",
-    "img2": "/images/selectIn02.png",
+    "imgs": ["/images/selectIn01.png", "/images/selectIn02.png"],
     "skills": "HTML, CSS, jQuery, gitlab",
     "tasks": [
-      { "taskTitle": "유효성 검사 추가", "taskEpxlain": [""] },
-      { "taskTitle": "Chart.js 활용한 통계 페이지 구현", "taskEpxlain": [""] },
-      { "taskTitle": "디자인 & 퍼블리싱 리팩토링", "taskEpxlain": [""] }
+      {
+        "taskTitle": "사용자 경험 및 서버 성능 개선을 위한 유효성 검사 추가",
+        "taskEpxlain": [
+          "사용자의 혼란을 방지하고, 서버의 성능 유지를 위해 기획·디자인 단계에서 빠진 유효성 검사 추가를 제안",
+          "폼 작성에 있어 꼭 필요한 안내 문구는 placeholder 대신 별도의 안내 문구로 분리",
+          "내부 데이터 형식과 맞지 않는 값은 에러 메시지를 통해 재작성 하도록 유도"
+        ]
+      },
+      {
+        "taskTitle": "Chart.js 활용한 통계 페이지 구현",
+        "taskEpxlain": [
+          "회사 디자인 시스템에 맞춰 폰트, 색상, 그리드, 툴팁 등을 커스텀",
+          "그리드 시스템을 사용해 성별, 연령, 경력 등의 데이터를 테블릿 세로 사이즈까지 확인 가능하도록 반응형 구현"
+        ]
+      },
+      {
+        "taskTitle": "디자인 & 퍼블리싱 리팩토링",
+        "taskEpxlain": [
+          "일관성 없는 UI/UX를 개선하고, CSS 성능 최적화하기 위해 스타일 가이드 제작 및 CSS 변수, 네이밍 정리"
+        ]
+      }
     ]
   },
   {
@@ -95,18 +161,18 @@
     "members": "",
     "startDate": "2022.06",
     "endDate": "2022.10",
-    "img": "/images/hdc01.png",
+    "imgs": ["/images/hdc01.png"],
     "skills": "",
     "tasks": [
-      { "taskTitle": "홈페이지 운영 PM", "taskEpxlain": [""] },
+      { "taskTitle": "홈페이지 운영 PM", "taskEpxlain": [] },
       {
         "taskTitle": "HDC현대산업개발 홈페이지 리뉴얼 기획",
-        "taskEpxlain": [""]
+        "taskEpxlain": []
       },
-      { "taskTitle": "아이파크 브랜드, 분양 사이트 총괄", "taskEpxlain": [""] },
+      { "taskTitle": "아이파크 브랜드, 분양 사이트 총괄", "taskEpxlain": [] },
       {
         "taskTitle": "포니정재단 신규 페이지 제작 및 리뉴얼 관리",
-        "taskEpxlain": [""]
+        "taskEpxlain": []
       }
     ]
   },
@@ -115,14 +181,14 @@
     "title": "포스코홀딩스",
     "explain": "",
     "responsive": "반응형",
-    "members": "",
+    "members": "4명 (PM 1명, 디자인 1명, 퍼블리싱 2명)",
     "startDate": "2022.01",
     "endDate": "2022.06",
-    "img": "/images/posco02.png",
+    "imgs": ["/images/posco02.png"],
     "skills": "HTML, CSS, jQuery, photoshop",
     "tasks": [
-      { "taskTitle": "사이트 신규 구축", "taskEpxlain": [""] },
-      { "taskTitle": "유지보수", "taskEpxlain": [""] }
+      { "taskTitle": "사이트 신규 구축", "taskEpxlain": [] },
+      { "taskTitle": "유지보수", "taskEpxlain": [] }
     ]
   },
   {
@@ -130,21 +196,21 @@
     "title": "포스코 기업시민 외 2곳",
     "explain": "",
     "responsive": "반응형",
-    "members": "",
+    "members": "포스코 기업시민 담당",
     "startDate": "2020.02",
     "endDate": "2022.06",
-    "img": "/images/posco01.png",
+    "imgs": ["/images/posco01.png"],
     "skills": "HTML, CSS, jQuery, photoshop",
     "tasks": [
       {
         "taskTitle": "컨텐츠 관리, 오류 대응 등 유지보수",
-        "taskEpxlain": [""]
+        "taskEpxlain": []
       },
-      { "taskTitle": "웹접근성 갱신", "taskEpxlain": [""] },
-      { "taskTitle": "신규 페이지 디자인 및 퍼블리싱", "taskEpxlain": [""] },
+      { "taskTitle": "웹접근성 갱신", "taskEpxlain": [] },
+      { "taskTitle": "신규 페이지 디자인 및 퍼블리싱", "taskEpxlain": [] },
       {
         "taskTitle": "포스코, 포스코 제품 유지보수 업무 보조",
-        "taskEpxlain": [""]
+        "taskEpxlain": []
       }
     ]
   }
