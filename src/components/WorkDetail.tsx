@@ -19,13 +19,14 @@ const WorkDetail = ({ id }: Props) => {
       <div className="flex flex-col border-b border-gray-300 pb-10">
         <p className="font-medium text-primary">{work?.responsive}</p>
         <h2 className="mb-2 mt-4 text-2xl font-bold">{work?.title}</h2>
-        <p className="flex gap-2 text-gray-500">
+        <p className="flex flex-col gap-2 text-gray-500 md:flex-row">
           <span>
             {work?.startDate} ~ {work?.endDate}
           </span>
           {work?.members !== "" && (
             <>
-              | <span>{work?.members}</span>
+              <span className="hidden md:block"> | </span>
+              <span>{work?.members}</span>
             </>
           )}
         </p>
