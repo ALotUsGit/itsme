@@ -8,6 +8,20 @@
 - git을 활용한 협업 경험이 있습니다.
 - Next.JS, React, Vue를 활용한 팀 프로젝트 경험이 있습니다.
 
-[포트폴리오](https://alotus.vercel.app/)
+<hr />
 
+### 배포 URL
+[포트폴리오 바로가기](https://alotus.vercel.app/)
 
+<hr />
+
+### 사용기술
+- Next.JS 14.2.15
+- TypeScript
+- Tailwind CSS 3.4.1
+
+<hr />
+
+### 주요 기능
+- 프로젝트별 기간, 참여인원, 주요역할 등 소개
+- 프로젝트 별 링크 공유 및 새로고침을 고려한 병렬 라우팅 및 인터셉트 라우팅 구현
