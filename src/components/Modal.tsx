@@ -8,13 +8,14 @@ type Props = { children?: React.ReactNode };
 
 const Modal = ({ children }: Props) => {
   const router = useRouter();
+  const body = document.querySelector("body") as HTMLElement;
 
   const back = () => {
     router.back();
+    body.style.overflow = "auto";
   };
 
   useEffect(() => {
-    const body = document.querySelector("body") as HTMLElement;
     body.style.overflow = "hidden";
   }, []);
 
