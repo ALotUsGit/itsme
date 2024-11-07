@@ -1,3 +1,8 @@
+type Imgs = {
+  previewId: string;
+  src: string;
+};
+
 type Tasks = {
   taskTitle: string;
   taskEpxlain: string[];
@@ -11,7 +16,7 @@ export type TWorks = {
   members?: string;
   startDate: string;
   endDate: string;
-  imgs: string[];
+  imgs: Imgs[];
   skills?: string;
   tasks: Tasks[];
 };

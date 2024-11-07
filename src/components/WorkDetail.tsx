@@ -1,11 +1,13 @@
-import Image from "next/image";
 import { TWorks } from "@/app/types/works-type";
 import works from "../../public/works.json";
+import ImageList from "./image/ImageList";
 
 type Task = {
   taskTitle: string;
   taskEpxlain: string[];
 };
+
+type ImgType = { previewId: string; src: string };
 
 type Props = {
   id: string;
@@ -73,19 +75,8 @@ const WorkDetail = ({ id }: Props) => {
       </div>
 
       <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {work?.imgs.map((img: string, idx: number) => (
-          <li
-            key={img + idx}
-            className="h-52 overflow-hidden rounded-md border border-gray-300 lg:h-60"
-          >
-            <Image
-              src={img}
-              alt={id}
-              width={400}
-              height={400}
-              className="h-full w-full object-cover object-top"
-            />
-          </li>
+        {work?.imgs.map(({ previewId, src }: ImgType) => (
+          <ImageList previewId={previewId} src={src} />
         ))}
       </ul>
     </>

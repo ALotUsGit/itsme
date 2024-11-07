@@ -18,7 +18,7 @@ const WorkList = ({ id, title, startDate, endDate, imgs, tasks }: TWorks) => {
       </h3>
       <div className="mb-4 h-28 overflow-hidden rounded-lg border border-gray-200 bg-gray-50 xl:h-52">
         <Image
-          src={imgs[0]}
+          src={imgs[0].src}
           alt={""}
           width="365"
           height="180"

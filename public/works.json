@@ -7,7 +7,12 @@
     "members": "기업 연계 프로젝트 (프론트엔드)",
     "startDate": "2024.09",
     "endDate": "진행중",
-    "imgs": ["/images/office01.png", "/images/office02.png"],
+    "imgs": [
+      { "previewId": "office01", "src": "/images/office01.png" },
+      { "previewId": "office02", "src": "/images/office02.png" },
+      { "previewId": "office03", "src": "/images/office03.png" },
+      { "previewId": "office04", "src": "/images/office04.png" }
+    ],
     "skills": "Next.JS, TypeScript, tailwind css, zustand, github, linear",
     "tasks": [
       {
@@ -41,7 +46,12 @@
     "members": "3명 (디자인·기획 1명, 퍼블리싱 1명, 개발 1명)",
     "startDate": "2024.03",
     "endDate": "2024.05",
-    "imgs": ["/images/selectTest01.png", "/images/selectTest02.png"],
+    "imgs": [
+      { "previewId": "selectTest01", "src": "/images/selectTest01.png" },
+      { "previewId": "selectTest02", "src": "/images/selectTest02.png" },
+      { "previewId": "selectTest03", "src": "/images/selectTest03.png" },
+      { "previewId": "selectTest04", "src": "/images/selectTest04.png" }
+    ],
     "skills": "HTML, CSS, Javascript, gitlab",
     "tasks": [
       {
@@ -74,7 +84,15 @@
     "members": "4명 (기획 1명, 디자인·기획 1명, 퍼블리싱 1명, 개발 1명)",
     "startDate": "2023.06",
     "endDate": "2023.06",
-    "imgs": ["/images/select36001.png", "/images/select36002.png"],
+    "imgs": [
+      {
+        "previewId": "selectTeselect36001st01",
+        "src": "/images/select36001.png"
+      },
+      { "previewId": "select36002", "src": "/images/select36002.png" },
+      { "previewId": "select36003", "src": "/images/select36003.png" },
+      { "previewId": "select36004", "src": "/images/select36004.png" }
+    ],
     "skills": "Vue, vuetify, html, css, Javascript, gitlab",
     "tasks": [
       {
@@ -108,7 +126,12 @@
     "members": "3명 (디자인·기획 1명, 퍼블리싱 1명, 개발 1명)",
     "startDate": "2023.07",
     "endDate": "2023.07",
-    "imgs": ["/images/kvai01.png", "/images/kvai02.png"],
+    "imgs": [
+      { "previewId": "kvai01", "src": "/images/kvai01.jpg" },
+      { "previewId": "kvai02", "src": "/images/kvai02.jpg" },
+      { "previewId": "kvai03", "src": "/images/kvai03.png" },
+      { "previewId": "kvai04", "src": "/images/kvai04.png" }
+    ],
     "skills": "HTML, CSS, jQuery, swiper, gitlab",
     "tasks": [
       {
@@ -134,7 +157,15 @@
     "members": "5명 (기획 1명, 디자인 1명, 퍼블리싱 1명, 개발 2명)",
     "startDate": "2023.02",
     "endDate": "2023.08",
-    "imgs": ["/images/selectIn01.png", "/images/selectIn02.png"],
+    "imgs": [
+      { "previewId": "selectIn01", "src": "/images/selectIn01.png" },
+      { "previewId": "selectIn02", "src": "/images/selectIn02.png" },
+      { "previewId": "selectIn03", "src": "/images/selectIn03.png" },
+      { "previewId": "selectIn04", "src": "/images/selectIn04.png" },
+      { "previewId": "selectIn05", "src": "/images/selectIn05.png" },
+      { "previewId": "selectIn06", "src": "/images/selectIn06.png" },
+      { "previewId": "selectIn07", "src": "/images/selectIn07.png" }
+    ],
     "skills": "HTML, CSS, jQuery, gitlab",
     "tasks": [
       {
@@ -168,7 +199,12 @@
     "members": "",
     "startDate": "2022.06",
     "endDate": "2022.10",
-    "imgs": ["/images/hdc01.png"],
+    "imgs": [
+      { "previewId": "hdc01", "src": "/images/hdc01.jpg" },
+      { "previewId": "hdc02", "src": "/images/hdc02.jpg" },
+      { "previewId": "hdc03", "src": "/images/hdc03.jpg" },
+      { "previewId": "hdc04", "src": "/images/hdc04.jpg" }
+    ],
     "skills": "",
     "tasks": [
       { "taskTitle": "홈페이지 운영 PM", "taskEpxlain": [] },
@@ -191,7 +227,7 @@
     "members": "4명 (PM 1명, 디자인 1명, 퍼블리싱 2명)",
     "startDate": "2022.01",
     "endDate": "2022.06",
-    "imgs": ["/images/posco02.png"],
+    "imgs": [{ "previewId": "posco04", "src": "/images/posco04.jpg" }],
     "skills": "HTML, CSS, jQuery, photoshop",
     "tasks": [
       { "taskTitle": "사이트 신규 구축", "taskEpxlain": [] },
@@ -206,7 +242,11 @@
     "members": "포스코 기업시민 담당",
     "startDate": "2020.02",
     "endDate": "2022.06",
-    "imgs": ["/images/posco01.png"],
+    "imgs": [
+      { "previewId": "posco01", "src": "/images/posco01.jpg" },
+      { "previewId": "posco02", "src": "/images/posco02.png" },
+      { "previewId": "posco03", "src": "/images/posco03.png" }
+    ],
     "skills": "HTML, CSS, jQuery, photoshop",
     "tasks": [
       {

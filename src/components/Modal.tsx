@@ -20,8 +20,14 @@ const Modal = ({ children }: Props) => {
   }, []);
 
   return (
-    <dialog className="fixed left-0 top-0 z-50 flex h-screen w-screen items-center justify-center bg-black/50">
-      <div className="relative max-w-screen-lg md:w-4/5">
+    <dialog
+      onClick={back}
+      className="fixed left-0 top-0 z-50 flex h-screen w-screen items-center justify-center bg-black/50"
+    >
+      <div
+        className="relative max-w-screen-lg md:w-4/5"
+        onClick={(e) => e.stopPropagation()}
+      >
         <button
           type="button"
           onClick={back}
