@@ -7,20 +7,7 @@ import WorkList from "@/components/WorkList";
 import works from "../../../public/works.json";
 import Link from "next/link";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
-
-type Tasks = {
-  taskTitle: string;
-  taskEpxlain: string[];
-};
-
-type Work = {
-  id: string;
-  title: string;
-  startDate: string;
-  endDate: string;
-  imgs: string[];
-  tasks: Tasks[];
-};
+import { TWorks } from "../types/works-type";
 
 const skills = [
   { category: "dev", name: "HTML" },
@@ -177,7 +164,7 @@ export default function Home() {
             Work
             <span className="absolute bottom-0 left-[3.15rem] -z-10 size-2 rounded-full bg-secondary md:bottom-1 md:left-[4.7rem] md:size-3" />
           </h2>
-          {works.map((work: Work) => (
+          {works.map((work: TWorks) => (
             <WorkList
               key={work.id}
               id={work.id}

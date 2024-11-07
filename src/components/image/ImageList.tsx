@@ -14,7 +14,6 @@ const ImageList = ({ src, previewId }: Props) => {
 
   return (
     <li
-      key={previewId}
       className="h-52 cursor-pointer overflow-hidden rounded-md border border-gray-300 lg:h-60"
       onClick={() => setIsShow((prev) => !prev)}
     >
