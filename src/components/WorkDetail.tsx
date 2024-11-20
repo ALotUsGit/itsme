@@ -1,6 +1,8 @@
 import { TWorks } from "@/app/types/works-type";
 import works from "../../public/works.json";
 import ImageList from "./image/ImageList";
+import Link from "next/link";
+import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 
 type Task = {
   taskTitle: string;
@@ -31,6 +33,18 @@ const WorkDetail = ({ id }: Props) => {
               <span>{work?.members}</span>
             </>
           )}
+          {work?.url && (
+            <>
+              <span className="hidden md:block"> | </span>
+              <Link
+                href={work?.url}
+                target="_blank"
+                className="flex items-center gap-2 transition-colors hover:text-primary"
+              >
+                사이트 보기 <ArrowUpRightIcon className="size-4" />
+              </Link>
+            </>
+          )}
         </p>
         <p className="mt-6 whitespace-pre-line text-gray-500">
           {work?.explain} <br />
@@ -59,11 +73,11 @@ const WorkDetail = ({ id }: Props) => {
               {task.taskTitle}
             </h4>
             {task.taskEpxlain.length > 0 && (
-              <ul className="pl-12">
+              <ul className="pl-12 flex flex-col gap-y-2">
                 {task.taskEpxlain.map((explain: string, idx: number) => (
                   <li
                     key={"taskDesc" + idx}
-                    className="list-disc text-gray-600"
+                    className="list-disc whitespace-pre-wrap text-gray-600"
                   >
                     {explain}
                   </li>

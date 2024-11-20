@@ -151,7 +151,7 @@ export default function Home() {
             <ul className="flex flex-col gap-2">
               <li className="relative pl-2">
                 <span className="absolute left-0">·</span> 오피스너 웹버전 구축
-                프로젝트 (2024.09 ~ 진행중, 프론트엔드)
+                프로젝트 (2024.09 ~ 2024.11, 프론트엔드)
               </li>
             </ul>
           </div>
