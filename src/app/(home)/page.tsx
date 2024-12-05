@@ -134,14 +134,18 @@ export default function Home() {
               <li className="relative pl-2">
                 <span className="absolute left-0">·</span>{" "}
                 한국직무능력평가연구소 (2023.02 ~ 2024.05, 웹퍼블리셔)
+                <br />
+                사용기술 : HTML, CSS, jQuery, JavaScript, Vue, Figma
               </li>
               <li className="relative pl-2">
                 <span className="absolute left-0">·</span> HDC현대산업개발
-                (2022.06 ~ 2022.10, 웹마스터)
+                (2022.06 ~ 2022.10, Product Manager + 웹개발)
               </li>
               <li className="relative pl-2">
                 <span className="absolute left-0">·</span> 인터메이저 (2020.02 ~
                 2022.06, 웹퍼블리셔)
+                <br />
+                사용기술 : HTML, CSS, jQuery
               </li>
             </ul>
           </div>
@@ -152,6 +156,9 @@ export default function Home() {
               <li className="relative pl-2">
                 <span className="absolute left-0">·</span> 오피스너 웹버전 구축
                 프로젝트 (2024.09 ~ 2024.11, 프론트엔드)
+                <br />
+                사용기술 : Next.JS, TypeScript, Tailwind css, zustand, Github,
+                Linear
               </li>
             </ul>
           </div>
